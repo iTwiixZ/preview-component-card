@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(233, 47%, 7%);
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+}
+
+.text_container {
+  border-radius: 10px 0 0 10px;
+  width: 500px;
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: hsl(244, 38%, 16%);
+}
+.text_container h1 {
+  font-family: "Lexend Deca", sans-serif;
+  color: hsl(0, 0%, 100%);
+  padding: 5px;
+}
+.text_container span {
+  color: hsl(277, 64%, 61%);
+}
+.paragraph {
+  margin-top: 35px;
+  color: hsla(0, 0%, 100%, 0.75);
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  padding: 5px;
+}
+
+.stats_container {
+  margin-top: 55px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+.number {
+  color: white;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+
+.stats p {
+  margin-top: 8px;
+  color: hsla(0, 0%, 100%, 0.6);
+  text-transform: uppercase;
+  font-size: 15px !important;
+  font-family: "Inter", sans-serif;
+}
+.image_container img {
+  width: 100%;
+  height: 100%;
+  filter: opacity(50%);
+  border-radius: 0 10px 10px 0;
+}
+.image_container {
+  background-color: hsl(277, 64%, 61%);
+  border-radius: 0 10px 10px 0;
+}
+
+/* Responsive */
+
+@media (min-width: 374px) and (max-width: 700px) {
+  .container {
+    display: flex;
+    margin-top: 35px;
+    margin-bottom: 35px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+    width: 350px;
+  }
+  .text_container {
+    border-radius: 0 0 10px 10px;
+    
+    width: 350px;
+   
+  }
+  .image_container {
+    width: 350px;
+    border-radius: 10px 10px 0 0;
+  }
+  .image_container img{
+    border-radius: 10px 10px 0 0;
+  }
+  .stats_container{
+    flex-wrap: wrap;
+    
+  }
+  .stats{
+    margin-top: 15px;
+  }
+
+}
